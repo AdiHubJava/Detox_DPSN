@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:label="@string/setings"
+    android:id="@+id/rlSett"
+    tools:context=".Settings">
+
+    <!-- Three Buttons for creating three tabs at the top -->
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#CEE3D5"
+        android:onClick="settings"
+        android:text="Settings"
+        android:textColor="#2196F3"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/Reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="mainActivity"
+        android:text="Reminder"
+        android:textColor="#2196F3"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/Suggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="suggestions"
+        android:text="TIPnTRICK"
+        android:textColor="#2196F3"
+        android:textSize="15dp" />
+
+    <!-- Text view for writing 'Personal Details'  -->
+    <TextView
+        android:id="@+id/tvPersonalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="100dp"
+        android:text="Personal Details"
+        android:textColor="#20B07C"
+        android:textSize="22dp" />
+
+    <!-- Three UI items (Switch, Edit Text and Text View) for Name -->
+    <Switch
+        android:id="@+id/switchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="159dp"
+        android:onClick="mthSwitchName"
+        android:text=""
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="143.5dp"
+        android:hint="Type new name"
+        android:textColor="#20B07C"
+        android:textSize="17dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="160dp"
+        android:text="Alter switch to change name"
+        android:textColor="#20B07C"
+        android:textSize="17dp" />
+
+    <!-- Three UI items (Switch, Edit Text and Text View) for Age -->
+    <Switch
+        android:id="@+id/switchAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="209dp"
+        android:onClick="mthSwitchAge"
+        android:text=""
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="193.5dp"
+        android:hint="Enter correct age"
+        android:textColor="#20B07C"
+        android:textSize="17dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="210dp"
+        android:inputType="number"
+        android:text="Alter switch to change age"
+        android:textColor="#20B07C"
+        android:textSize="17dp" />
+
+    <!-- Three UI items (Switch, Edit Text and Text View) for Email -->
+    <Switch
+        android:id="@+id/switchEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="259dp"
+        android:onClick="mthSwitchEmail"
+        android:text=""
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="243.5dp"
+        android:hint="Type new email"
+        android:textColor="#20B07C"
+        android:textSize="17dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="260dp"
+        android:inputType="number"
+        android:text="Alter switch to change email"
+        android:textColor="#20B07C"
+        android:textSize="17dp" />
+
+    <!-- Three UI items (Switch, Edit Text and Text View) for Reminder Time Interval -->
+    <Switch
+        android:id="@+id/switchReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="309dp"
+        android:onClick="mthSwitchReminder"
+        android:text=""
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/etReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="293.5dp"
+        android:hint="Set new reminder time (minutes)"
+        android:textColor="#20B07C"
+        android:textSize="17dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="310dp"
+        android:inputType="number"
+        android:text="Alter to change time (minutes)"
+        android:textColor="#20B07C"
+        android:textSize="17dp" />
+
+    <!-- Button to Submit the changed personal details -->
+    <Button
+        android:id="@+id/buttSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="350dp"
+        android:onClick="mthButtSubmit"
+        android:text="Done"
+        android:background="#DAD8D8"
+        android:textColor="#2196F3"
+        android:textSize="17dp"
+        android:visibility="invisible" />
+
+
+    <!-- Legend at Bottom mentioning App developer -->
+    <TextView
+        android:id="@+id/tvDPSN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginBottom="27dp"
+        android:text="Created: DPS NOIDA"
+        android:textColor="#20B07C"
+        android:background="#CEE3D5"
+        android:textSize="17dp" />
+</RelativeLayout>
